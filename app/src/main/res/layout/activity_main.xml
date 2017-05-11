@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.a15031777.demodatabase.MainActivity">
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="21dp"
+            android:text="Insert" />
+
+        <Button
+            android:id="@+id/btnGetTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnInsert"
+            android:layout_alignStart="@+id/btnInsert"
+            android:layout_below="@+id/btnInsert"
+            android:layout_marginTop="23dp"
+            android:text="Get tasks" />
+
+        <TextView
+            android:id="@+id/tvResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnGetTasks"
+            android:layout_alignStart="@+id/btnGetTasks"
+            android:layout_below="@+id/btnGetTasks"
+            android:layout_marginTop="45dp"
+            android:background="@color/colorAccent"
+            android:text="TextView" />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvResults"
+            android:layout_marginTop="19dp" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
